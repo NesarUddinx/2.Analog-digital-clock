@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="myWatch">
+    <div class="container">
+      <div class="clock">
+        <div class="circle" style="--clr:#5CFA00" id="sc"><i></i></div>
+        <div class="circle circle2" style="--clr:#EFFA00" id="mn"><i></i></div>
+        <div class="circle circle3" style="--clr: #E00014" id="hr"><i></i></div>
+    
+        <span style="--i:0"><b>12</b></span>
+        <span style="--i:1"><b>1</b></span>
+        <span style="--i:2"><b>2</b></span>
+        <span style="--i:3"><b>3</b></span>
+        <span style="--i:4"><b>4</b></span>
+        <span style="--i:5"><b>5</b></span>
+        <span style="--i:6"><b>6</b></span>
+        <span style="--i:7"><b>7</b></span>
+        <span style="--i:8"><b>8</b></span>
+        <span style="--i:9"><b>9</b></span>
+        <span style="--i:10"><b>10</b></span>
+        <span style="--i:11"><b>11</b></span>
+      </div>
+      <div class="digital-clock">
+        <span id="hrr" style="--clr: #FF0006">00</span>
+        <span id="mnn" style="--clr:#EFFA00">00</span>
+        <span id="scc" style="--clr:#5CFA00">00</span>
+        <span id="am-pm"></span>
+      </div>
+      <div class="alarm">
+        <select style="--clr: #FF0006">
+          <option value="Hour" selected hidden>Hour</option>
+        </select>
+    
+        <select style="--clr:#EFFA00">
+          <option value="Minute" selected hidden>Minute</option>
+        </select>
+    
+        <select id="ampm" style="--clr:#5CFA00">
+          <option value="AM/PM" selected hidden>AM/PM</option>
+        </select>
+      </div>
+      <button id="alarmBtn">Set Alarm</button>
+    </div>
+    
+    
+    
+    <div class="watch">
+      <div class="crcl" style="--clr: #FF0006">
+        <div class="dots xh_dot"></div>
+        <svg>
+          <circle cx="30" cy="30" r="30"> </circle>
+          <circle cx="30" cy="30" r="30" id="xh"> </circle>
+        </svg>
+        <div id="xhour">00</div>
+      </div>
+    
+      <div class="crcl" style="--clr:#EFFA00">
+        <div class="dots xm_dot"></div>
+        <svg>
+          <circle cx="30" cy="30" r="30"> </circle>
+          <circle cx="30" cy="30" r="30" id="xm"> </circle>
+        </svg>
+        <div id="xminute">00</div>
+      </div>
+    
+      <div class="crcl" style="--clr:#5CFA00">
+        <div class="dots xc_dot"></div>
+        <svg>
+          <circle cx="30" cy="30" r="30"> </circle>
+          <circle cx="30" cy="30" r="30" id="xc"> </circle>
+        </svg>
+        <div id="xsecond">00</div>
+      </div>
+      <div id="xampm"></div>
+    </div>
+  </div>
+   
+  <script src="main.js"></script>
+</body>
+</html>
